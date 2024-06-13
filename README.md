@@ -65,3 +65,42 @@ PORT=3000
 ### 6. Запуск приложения
 
 ```npm start```
+
+## Примеры API запросов
+
+### Создание новой задачи
+```
+URL: POST /tasks
+Body:
+json
+```
+```
+{
+  "title": "New Task",
+  "description": "This is a new task",
+  "status": "pending"
+}
+```
+
+Получение списка всех задач
+
+```
+URL: GET /tasks
+Получение задачи по ID
+URL: GET /tasks/:id
+Обновление задачи по ID
+URL: PUT /tasks/:id
+Body:
+json
+```
+```
+{
+  "title": "Updated Task",
+  "description": "This is an updated task",
+  "status": "completed"
+}
+```
+Удаление задачи по ID
+```
+URL: DELETE /tasks/:id
+```
